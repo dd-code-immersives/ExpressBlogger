@@ -2,7 +2,7 @@ let blogsValidation = (blogInfo) => {
 	console.log("array ", array)
 	console.log("filteredArray ", filteredArray) 
 
-	if (blogInfo.title === undefined || typeof(blogInfo.title) !== "string" || blogInfo.title.length > 50) {
+	if (blogInfo.title === undefined || typeof(blogInfo.title) !== "string" || blogInfo.title.length > 40) {
 		return {
 			isValid: false,
 			message: "title is required, should be a string"
@@ -22,7 +22,7 @@ let blogsValidation = (blogInfo) => {
 		}
 	}
 
-	if (blogInfo.author === undefined || typeof(blogInfo.author) !== "string" || blogInfo.author.length > 50 ) {
+	if (blogInfo.author === undefined || typeof(blogInfo.author) !== "string" || blogInfo.author.length > 40 ) {
 		return {
 			isValid: false,
 			message: "Author is required, should be a string"
