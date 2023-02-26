@@ -33,6 +33,8 @@ router.get('/', async function(req, res, next) {
     
 });
 
+
+
 /* GET users listing. */
 
 router.get('/all', async function(req, res, next) {
@@ -56,6 +58,8 @@ router.get('/all', async function(req, res, next) {
 
 });
 
+
+
 router.get('/get-one', async function (req, res, next) {
   
   const title = req.query.title
@@ -78,6 +82,8 @@ router.get('/get-one', async function (req, res, next) {
 });
 
     
+
+
 router.get('/single-blog/:id', async function (req, res, next) {
     
  const idToGet = req.params.id
@@ -102,6 +108,8 @@ router.get('/single-blog/:id', async function (req, res, next) {
 
 
 
+
+
 router.delete('/delete/:titleToDelete', async function (req,res, next) {
       
   const blogToDelete = req.params.titleToDelete
@@ -122,6 +130,8 @@ router.delete('/delete/:titleToDelete', async function (req,res, next) {
               blogs: queryFind
             });
           })
+
+
 
 
 router.post("/create-one", async function (req, res, next) {
@@ -157,6 +167,10 @@ router.post("/create-one", async function (req, res, next) {
                 blogs: queryFind
               });
           });
+
+
+
+
 
 
 module.exports = router;
