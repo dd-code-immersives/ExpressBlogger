@@ -15,7 +15,7 @@ module.exports = {
       }
 
       dbConnection = db.db('blog_data');
-      console.log('Successfully connected to MongoDB.');
+      console.log('Youve Successfully connected to MongoDB.');
 
       return callback();
     });
