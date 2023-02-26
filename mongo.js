@@ -4,7 +4,7 @@ const { MongoClient } = require("mongodb");
 let database;
 async function mongoConnect() {
 
-	const uri = process.env.ATLAS_URI;
+	const uri = process.env.MONGO_URI;
 	
 	const client = new MongoClient(uri);
 	try {
